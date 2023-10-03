@@ -1,0 +1,31 @@
+@import 'styles/variables.scss';
+
+.container {
+    font-size: $font-size-medium;
+
+    &__flexbox {
+        display: flex;
+        justify-content: space-between;
+        > img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            border: 4px solid black;
+        }
+        > p {
+            font-weight: 700;
+            color: $primary-color;
+            font-family: Poppins;
+        }
+    }
+    &__name {
+        background: var(
+            --Gradient-Heading,
+            linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Poppins;
+    }
+}

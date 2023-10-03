@@ -1,0 +1,42 @@
+@import 'styles/variables.scss';
+
+.container {
+    width: 260px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.3s;
+    animation: ease-in;
+    border-radius: 12px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 0.1rem;
+    }
+    &__description {
+        color: $secondary-color;
+    }
+    &__image {
+        overflow: hidden;
+        background-color: red;
+    }
+    &__cardContent {
+        margin: 1rem;
+        margin-top: 0.5rem;
+        height: 140px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 16px 14px 16px;
+    }
+
+    a {
+        text-decoration: none;
+        border: none;
+    }
+}
+
+.container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+}

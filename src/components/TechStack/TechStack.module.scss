@@ -1,0 +1,25 @@
+@import 'styles/variables.scss';
+
+.container {
+    &__title {
+        text-align: center;
+        font-family: Poppins;
+    }
+
+    img {
+        width: 60px;
+    }
+    h2 {
+        color: $primary-color;
+    }
+    p {
+        font-size: $font-size-small;
+        color: $secondary-color;
+    }
+
+    &__flexBox {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
