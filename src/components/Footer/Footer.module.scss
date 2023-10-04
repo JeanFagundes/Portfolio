@@ -1,0 +1,23 @@
+@import 'styles/variables.scss';
+
+.container {
+    color: $primary-color;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+
+    &__firstList {
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        gap: 60px;
+
+        li {
+            font-size: $font-size-small;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

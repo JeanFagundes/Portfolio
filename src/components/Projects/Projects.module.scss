@@ -1,0 +1,23 @@
+@import 'styles/variables.scss';
+
+.container {
+    &__card {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    &__title {
+        font-size: $font-size-large;
+        color: $primary-color;
+    }
+    &__subTitle {
+        font-size: $font-size-medium;
+        color: $secondary-color;
+    }
+    &__title,
+    &__subTitle {
+        text-align: center;
+    }
+}

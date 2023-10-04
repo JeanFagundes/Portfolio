@@ -7,17 +7,21 @@
     }
 
     img {
-        width: 60px;
+        width: 120px;
+        height: 120px;
     }
     h2 {
+        font-size: $font-size-large;
+
         color: $primary-color;
     }
     p {
-        font-size: $font-size-small;
+        font-size: $font-size-medium;
         color: $secondary-color;
     }
 
     &__flexBox {
+        padding-top: 60px;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
