@@ -2,18 +2,44 @@
 
 .container {
     color: $primary-color;
-    padding-top: 3rem;
+    padding-top: 7rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid black;
-
+    flex-direction: column;
+    font-size: $font-size-small;
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 60px;
+        padding-bottom: 20px;
+    }
     &__firstList {
         display: flex;
         list-style-type: none;
         text-align: center;
         gap: 60px;
-
+    }
+    &__socialMidia {
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        gap: 10px;
+    }
+    &__flexBoxFooter {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid $secondary-color;
+        > p {
+            color: $secondary-color;
+        }
+    }
+    &__secondList {
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        gap: 60px;
+        padding-bottom: 30px;
         li {
             font-size: $font-size-small;
             display: flex;
