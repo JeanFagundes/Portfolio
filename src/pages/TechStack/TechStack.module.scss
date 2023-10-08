@@ -1,0 +1,20 @@
+@import 'styles/variables.scss';
+
+.container {
+    padding-top: 120px;
+    &__technologiesText {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        font-size: $font-size-medium;
+    }
+    p {
+        color: $secondary-color;
+        font-size: $font-size-small;
+    }
+}

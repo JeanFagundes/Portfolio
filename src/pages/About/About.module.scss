@@ -1,0 +1,42 @@
+@import 'styles/variables.scss';
+
+.container {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 708px;
+
+    h1 {
+        color: $primary-color;
+        font-size: $font-size-large;
+    }
+
+    h2,
+    h3,
+    p {
+        color: $secondary-color;
+    }
+
+    &__aboutMe,
+    &__workExperience,
+    &__jobRole,
+    &__formation {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__projects,
+    &__formation,
+    &__description {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $secondary-color;
+    }
+
+    &__projects {
+        > h3 {
+            padding: 10px;
+        }
+    }
+}

@@ -8,14 +8,32 @@ import vscode from 'assets/visual-studio-code-icon.svg';
 import git from 'assets/git-icon.svg';
 import postman from 'assets/postman-icon.svg';
 
-export default function TechStack() {
+interface props {
+    option: 'home' | 'technologie';
+}
+export default function TechStackModule({ option = 'home' }: props) {
+    const styleOption =
+        option === 'home' ? styles.container__home : styles.container__technologie;
+
+    const object = {
+        title: '',
+        flexBox: '',
+    };
+
+    if (option === 'home') {
+        object.title = styles.container__home__title;
+        object.flexBox = styles.container__home__flexBox;
+    } else {
+        object.title = styles.container__technologie__title;
+        object.flexBox = styles.container__technologie__flexBox;
+    }
     return (
-        <div className={styles.container}>
-            <div className={styles.container__title}>
-                <h2>Tecnologias que tenho usado</h2>
+        <div className={styleOption}>
+            <div className={object.title}>
+                <h2>Tecnologias em Foco</h2>
                 <p>Tecnologias que eu tenho trabalhado recentemente</p>
             </div>
-            <div className={styles.container__flexBox}>
+            <div className={object.flexBox}>
                 <img src={react} />
                 <img src={node} />
                 <img src={typescript} />

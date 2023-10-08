@@ -1,6 +1,6 @@
 import About from 'components/About';
 import Projects from 'components/Projects';
-import TechStack from 'components/TechStack';
+import TechStack from 'components/TechStackModule';
 import styles from './Home.module.scss';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
                 <About />
             </div>
             <div className={styles.container__techStack}>
-                <TechStack />
+                <TechStack option={'home'} />
             </div>
             <div className={styles.conainer__projects}>
                 <Projects />

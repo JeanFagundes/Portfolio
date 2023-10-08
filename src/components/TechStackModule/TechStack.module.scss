@@ -1,0 +1,55 @@
+@import 'styles/variables.scss';
+
+.container__home {
+    &__title {
+        text-align: center;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+    h2 {
+        font-size: $font-size-large;
+        color: $primary-color;
+    }
+    p {
+        font-size: $font-size-medium;
+        color: $secondary-color;
+    }
+
+    &__flexBox {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+}
+
+.container__technologie {
+    &__title {
+        text-align: center;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    h2 {
+        font-size: $font-size-medium;
+        color: $primary-color;
+    }
+    p {
+        font-size: $font-size-small;
+        color: $secondary-color;
+    }
+
+    &__flexBox {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+}
