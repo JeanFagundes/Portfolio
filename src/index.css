@@ -3,7 +3,7 @@ body {
     font-family: Poppins;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding: 20px 260px 0px 260px;
+    padding: 20px 10% 0px 10%;
 }
 
 * {
