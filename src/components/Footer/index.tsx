@@ -23,17 +23,17 @@ export default function Footer() {
                     <ul className={styles.container__socialMidia}>
                         <li>
                             <a href="https://github.com/JeanFagundes">
-                                <AiFillGithub size={30} />
+                                <AiFillGithub />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/jean-fagundes-31488910b/">
-                                <AiFillLinkedin size={30} />
+                                <AiFillLinkedin />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/jeanfagundes96/?hl=pt-br">
-                                <AiOutlineInstagram size={30} />
+                                <AiOutlineInstagram />
                             </a>
                         </li>
                     </ul>

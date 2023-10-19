@@ -2,10 +2,14 @@
 
 .container {
     font-size: $font-size-big;
-
+    display: flex;
+    justify-content: center;
     &__flexbox {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+
         > img {
             border-radius: 50%;
             width: 350px;
@@ -27,5 +31,31 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Poppins;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: $font-size-big / 2;
+
+        &__flexbox {
+            > img {
+                width: 150px;
+                height: 150px;
+                border: 2px solid black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        &__flexbox {
+            > img {
+                width: 300px;
+                height: 300px;
+                border: 2px solid black;
+            }
+        }
     }
 }

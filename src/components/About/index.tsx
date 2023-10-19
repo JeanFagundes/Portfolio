@@ -6,7 +6,7 @@ export default function About() {
         <div className={styles.container}>
             <div className={styles.container__flexbox}>
                 <p>
-                    Ola <br />
+                    Ola, <br />
                     Meu nome é <br />
                     <p className={styles.container__name}>Jean Fagundes</p>
                     Sou desenvolvedor Full-Stack Web

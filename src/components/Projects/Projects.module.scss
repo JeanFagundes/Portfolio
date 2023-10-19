@@ -22,3 +22,32 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        &__card {
+            padding-top: 40px;
+            gap: 14px;
+        }
+        &__title {
+            font-size: $font-size-large / 1.6;
+        }
+        &__subTitle {
+            font-size: $font-size-medium / 1.6;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        padding-bottom: 30px;
+        &__card {
+            flex-direction: column;
+            gap: 40px;
+            > div {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

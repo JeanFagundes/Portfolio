@@ -4,6 +4,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding: 20px 10% 0px 10%;
+    min-width: 360px;
 }
 
 * {
@@ -20,4 +21,10 @@ code {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 16px;
+    }
 }
