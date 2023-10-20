@@ -6,6 +6,7 @@ import About from 'pages/About';
 import TechStack from 'pages/TechStack';
 import Projects from 'pages/Projects';
 import Contact from 'pages/Contact';
+import ProjectDetail from 'pages/Projects/ProjectDetails';
 function App() {
     return (
         <Router>
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/tech" element={<TechStack />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/projects/:id" element={<ProjectDetail />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />

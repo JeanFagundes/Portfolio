@@ -1,0 +1,11 @@
+@import 'styles/variables.scss';
+.container {
+    &__carousel {
+        display: flex;
+        justify-content: center;
+        background-color: $primary-color;
+    }
+    &__carousel1 {
+        width: 30%;
+    }
+}

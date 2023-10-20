@@ -5,6 +5,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     padding: 20px 10% 0px 10%;
     min-width: 360px;
+    max-width: 1900px;
 }
 
 * {

@@ -35,6 +35,7 @@ export default function ProjectsModule() {
                 {projects.map((project) => (
                     <div key={project.id}>
                         <Card
+                            id={project.id}
                             title={project.title}
                             imageUrl={project.imageUrl}
                             description={project.description}

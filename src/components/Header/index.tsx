@@ -30,33 +30,33 @@ export default function Header() {
                     <div className={styles.container__two}></div>
                     <div className={styles.container__three}></div>
                 </div>
-                {showOptions && (
-                    <ul
-                        className={`${styles.container__firstList} ${
-                            showOptions ? `${styles.container__firstList__active}` : ''
-                        }`}>
-                        <li onClick={() => handleClickNavigate('/')}>Inicio</li>
-                        <li onClick={() => handleClickNavigate('/about')}>Sobre</li>
-                        <li onClick={() => handleClickNavigate('/tech')}>Tecnologias</li>
-                        <li onClick={() => handleClickNavigate('/projects')}>Projetos</li>
-                        <li onClick={() => handleClickNavigate('/contact')}>Contato</li>
-                        <li className={styles.container__socialMedia}>
-                            <a href="https://github.com/JeanFagundes">
-                                <AiFillGithub />
-                            </a>
-                        </li>
-                        <li className={styles.container__socialMedia}>
-                            <a href="https://www.linkedin.com/in/jean-fagundes-31488910b/">
-                                <AiFillLinkedin />
-                            </a>
-                        </li>
-                        <li className={styles.container__socialMedia}>
-                            <a href="https://www.instagram.com/jeanfagundes96/?hl=pt-br">
-                                <AiOutlineInstagram />
-                            </a>
-                        </li>
-                    </ul>
-                )}
+                <ul
+                    className={`${styles.container__firstList} ${
+                        showOptions
+                            ? `${styles.container__firstList__active}`
+                            : `${styles.container__firstList__inactive}`
+                    }`}>
+                    <li onClick={() => handleClickNavigate('/')}>Inicio</li>
+                    <li onClick={() => handleClickNavigate('/about')}>Sobre</li>
+                    <li onClick={() => handleClickNavigate('/tech')}>Tecnologias</li>
+                    <li onClick={() => handleClickNavigate('/projects')}>Projetos</li>
+                    <li onClick={() => handleClickNavigate('/contact')}>Contato</li>
+                    <li className={styles.container__socialMedia}>
+                        <a href="https://github.com/JeanFagundes">
+                            <AiFillGithub />
+                        </a>
+                    </li>
+                    <li className={styles.container__socialMedia}>
+                        <a href="https://www.linkedin.com/in/jean-fagundes-31488910b/">
+                            <AiFillLinkedin />
+                        </a>
+                    </li>
+                    <li className={styles.container__socialMedia}>
+                        <a href="https://www.instagram.com/jeanfagundes96/?hl=pt-br">
+                            <AiOutlineInstagram />
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </header>
     );

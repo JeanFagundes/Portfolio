@@ -2,7 +2,6 @@
 
 .container {
     color: $secondary-color;
-
     &__firstList {
         display: flex;
         list-style-type: none;
@@ -52,6 +51,9 @@
             width: auto;
         }
         &__firstList {
+            &__inactive {
+                display: none;
+            }
             &__active {
                 position: absolute;
                 top: 8vh;
