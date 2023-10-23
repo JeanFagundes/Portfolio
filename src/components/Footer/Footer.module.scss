@@ -2,10 +2,16 @@
 
 .container {
     color: $primary-color;
-    padding-top: 7rem;
     display: flex;
     flex-direction: column;
     font-size: $font-size-small;
+    min-height: 50vh;
+
+    &__flexbox {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
     &__contact {
         display: flex;
         flex-direction: row;
@@ -63,6 +69,7 @@
 
 @media screen and (max-width: 768px) {
     .container {
+        min-height: 40vh;
         &__flexBoxFooter {
             padding-top: 30px;
             border-top: 2px solid $secondary-color;
@@ -77,6 +84,11 @@
 
 @media screen and (max-width: 425px) {
     .container {
+        &__flexbox {
+            padding-top: 12px;
+            border-top: 1px solid $secondary-color;
+        }
+        min-height: 10vh;
         font-size: 16px;
         &__contact {
             justify-content: space-between;

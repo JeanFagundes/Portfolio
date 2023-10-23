@@ -19,3 +19,9 @@
         font-size: $font-size-medium;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .container {
+        padding-top: 20px;
+    }
+}

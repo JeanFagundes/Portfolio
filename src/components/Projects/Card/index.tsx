@@ -6,13 +6,15 @@ interface Props {
     title: string;
     imageUrl: string;
     description: string;
+    github: string;
+    page: string;
 }
 
-export default function Card({ id, title, imageUrl, description }: Props) {
+export default function Card({ id, title, imageUrl, description, github, page }: Props) {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate(`/projects/${id}`, {
-            state: { id, title, imageUrl, description },
+            state: { id, title, imageUrl, description, page },
         });
     };
     return (
@@ -39,9 +41,13 @@ export default function Card({ id, title, imageUrl, description }: Props) {
                     </p>
                 </div>
                 <div>
-                    <p>
-                        <a href="">View Code</a>
-                    </p>
+                    {github !== 'private code' ? (
+                        <p>
+                            <a href={github}>View Code</a>
+                        </p>
+                    ) : (
+                        <p style={{ textDecoration: 'underline' }}>Private Code</p>
+                    )}
                 </div>
             </div>
         </div>

@@ -12,6 +12,11 @@ import bankImage10 from 'assets/Bank/10.jpeg';
 import bankImage11 from 'assets/Bank/11.jpeg';
 import bankImage12 from 'assets/Bank/12.jpeg';
 
+import movieImage1 from 'assets/Movie/1.jpeg';
+import movieImage2 from 'assets/Movie/2.jpeg';
+import movieImage3 from 'assets/Movie/3.jpeg';
+import movieImage4 from 'assets/Movie/4.jpeg';
+
 export const dataBank = [
     { id: 1, imageUrl: bankImage1 },
     { id: 2, imageUrl: bankImage2 },
@@ -26,4 +31,11 @@ export const dataBank = [
     { id: 10, imageUrl: bankImage10 },
     { id: 11, imageUrl: bankImage11 },
     { id: 12, imageUrl: bankImage12 },
+];
+
+export const movieTheater = [
+    { id: 1, imageUrl: movieImage1 },
+    { id: 2, imageUrl: movieImage2 },
+    { id: 3, imageUrl: movieImage3 },
+    { id: 4, imageUrl: movieImage4 },
 ];
